@@ -4,11 +4,11 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
-// Configurações sensíveis removidas para segurança
-const token = 'TOKEN_HERE'; // Insira seu token do bot
-const clientId = 'CLIENT_ID'; // ID do seu bot
-const guildId = 'GUILD_ID'; // ID do seu servidor Discord
-const canalId = 'CHANNEL_ID'; // ID do canal onde as mensagens serão enviadas
+
+const token = 'TOKEN_HERE'; 
+const clientId = 'CLIENT_ID'; 
+const guildId = 'GUILD_ID';
+const canalId = 'CHANNEL_ID'; 
 
 // Inicializa o cliente do bot com intenções necessárias
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
@@ -24,7 +24,7 @@ const allowedUserIds = ['ID_USER_1', 'ID_USER_2', 'ID_USER_3'];
 // Definição dos meses e dias para controle de contagem
 const meses = [
     { name: 'Janeiro', days: 31 },
-    { name: 'Fevereiro', days: 28 }, // Ano bissexto não considerado
+    { name: 'Fevereiro', days: 28 }, 
     { name: 'Março', days: 31 },
     { name: 'Abril', days: 30 },
     { name: 'Maio', days: 31 },
