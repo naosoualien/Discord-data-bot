@@ -149,3 +149,4 @@ client.on('interactionCreate', async interaction => {
 client.login(token)
     .then(() => console.log('Bot fez login com sucesso.'))
     .catch(e => console.log('Erro ao fazer login:', e));
+// Hi faruk
